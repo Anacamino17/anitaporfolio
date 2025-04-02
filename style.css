@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(#faee80, #ff9ca9); /*background-color: rgb(250, 214, 197);*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+    color: rgb(59, 59, 59);
+
+    .titulo-seccion{
+        color:#583425;
+        text-align: left;
+    }
+
+    nav {
+        background-color: rgb(255, 194, 165);
+        color: #fff067;
+        padding: 10px;
+        text-align:right; 
+    }
+
+    nav a {
+        color: #695f00;
+        text-decoration:none;
+        margin: 20px;
+        text-align:right; 
+    }
+    h1 {
+        text-align: center;
+    }
+    h3,h4,h5 {
+        color:rgb(114, 165, 80);
+    }
+    ol li{
+        margin-left: 20px;
+    }
+    ul li{
+        margin-left: 20px;
+    }
+    button{
+        background-color: rgb(115, 115, 243);
+        color:whitesmoke;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    img{
+        width: 400px;
+        height: auto;
+        border: 2px;
+        border-radius: 20px;
+        border-style:dotted;
+    }
+    .contacto{
+        text-align: left;
+    }
+}
