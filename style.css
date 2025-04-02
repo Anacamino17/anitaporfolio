@@ -6,9 +6,9 @@
 }
 
 body {
-    background-image: url('img\pawel-czerwinski-qztBRIrU1FM-unsplash.jpg');
-    background-size: cover;  /* Ensures it covers the entire screen */
-    background-position: center; /* Centers the image */
+    background-image: url('.img/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg');
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat; /* Prevents tiling */
     background-attachment: fixed; /* Keeps it fixed when scrolling */
     color: #fff8f8;
@@ -17,8 +17,9 @@ body {
 
     .contenedor {
         max-width: 1000px;
-        margin: 20px auto;
+        margin: auto;
         display: grid;
+        gap: 20px 0px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, auto);
         grid-template-areas:
@@ -41,7 +42,7 @@ body {
     nav {
         width: 100%;
         grid-area: nav;
-        background-color: rgb(141, 170, 173);
+        background-color: rgb(116, 176, 182);
         color: #fff8f8;
         display: flex;
         padding: 10px;
@@ -51,7 +52,7 @@ body {
 
     .nav-menu {
         width: 100%;
-        background-color: rgb(141, 170, 173);
+
         color: #fff8f8;
         padding: 10px 20px;
         display: flex;
@@ -70,7 +71,7 @@ body {
         padding: 10px;
     }
     .nav-logo .logo-text1 {
-        font-family: "Comforter",sans-serif;
+        font-family: "Quicksand",sans-serif;
         font-size: xx-large;   
     } 
     .nav-logo .logo-text2 {
@@ -88,20 +89,23 @@ body {
 
 
     .contenido {
-        background: #f3c0c0;
+        background: #f3c0c05b;
+        color: rgb(22, 22, 36);
         padding: 20px;
         border-radius: 5px;
         grid-area: contenido;
     }
     .sidebar {
+        width: 100%;
         grid-area: sidebar;
-        background: #67db9d48;
+        background: #67db9d18;
+        color: rgb(22, 22, 36);
         display: flex;
         flex-direction: column;
         justify-content: top; 
         align-items: center; 
         padding: 20px;
-        border-radius: 12px; 
+        border-radius: 5px; 
       }
 
 
