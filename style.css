@@ -1,55 +1,107 @@
-body {
-    background: linear-gradient(#faee80, #ff9ca9); /*background-color: rgb(250, 214, 197);*/
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 40px;
-    color: rgb(59, 59, 59);
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Quicksand:wght@300..700&display=swap');
 
-    .titulo-seccion{
-        color:#583425;
-        text-align: left;
+*{
+    margin: 0;
+    padding: 0;                                
+}
+
+body {
+    background-image: url('img\pawel-czerwinski-qztBRIrU1FM-unsplash.jpg');
+    background-size: cover;  /* Ensures it covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps it fixed when scrolling */
+    color: #fff8f8;
+    font-family: "Quicksand", sans-serif;
+    }
+
+    .contenedor {
+        max-width: 1000px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "nav nav nav"
+        "contenido contenido sidebar"
+        "bloque1 bloque1 bloque2 "
+        "footer footer footer";
+     }
+
+    ul{
+        list-style: none;
+    }
+
+    button {
+        cursor: pointer;
+        border: none;
+        background: none;
     }
 
     nav {
-        background-color: rgb(255, 194, 165);
-        color: #fff067;
+        width: 100%;
+        grid-area: nav;
+        background-color: rgb(141, 170, 173);
+        color: #fff8f8;
+        display: flex;
         padding: 10px;
-        text-align:right; 
+        align-items: center;
+        justify-content: space-between;
     }
 
-    nav a {
-        color: #695f00;
-        text-decoration:none;
-        margin: 20px;
-        text-align:right; 
-    }
-    h1 {
-        text-align: center;
-    }
-    h3,h4,h5 {
-        color:rgb(114, 165, 80);
-    }
-    ol li{
-        margin-left: 20px;
-    }
-    ul li{
-        margin-left: 20px;
-    }
-    button{
-        background-color: rgb(115, 115, 243);
-        color:whitesmoke;
+    .nav-menu {
+        width: 100%;
+        background-color: rgb(141, 170, 173);
+        color: #fff8f8;
         padding: 10px 20px;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
+        display: flex;
+        justify-content: flex-end; 
+        gap: 20px;
+        align-items: left;        
+        
     }
-    img{
-        width: 400px;
-        height: auto;
-        border: 2px;
-        border-radius: 20px;
-        border-style:dotted;
+
+    .nav-logo {
+        color: #fff8f8; 
+        text-decoration: none;
+        /*display:flex;
+        justify-content: left;
+        align-items: center; */
+        padding: 10px;
     }
-    .contacto{
-        text-align: left;
+    .nav-logo .logo-text1 {
+        font-family: "Comforter",sans-serif;
+        font-size: xx-large;   
+    } 
+    .nav-logo .logo-text2 {
+        font-family: "Quicksand",sans-serif;
+        font-size: small; } 
+
+
+    .navbar .nav-menu li a { 
+        color: #fff8f8 !important;
+        text-decoration: none;
+        display: flex;
+        justify-content: right;
+        align-items: center; 
     }
-}
+
+
+    .contenido {
+        background: #f3c0c0;
+        padding: 20px;
+        border-radius: 5px;
+        grid-area: contenido;
+    }
+    .sidebar {
+        grid-area: sidebar;
+        background: #67db9d48;
+        display: flex;
+        flex-direction: column;
+        justify-content: top; 
+        align-items: center; 
+        padding: 20px;
+        border-radius: 12px; 
+      }
+
+
